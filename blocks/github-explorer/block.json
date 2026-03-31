@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ivelum/github-explorer",
+  "version": "0.1.0",
+  "title": "Ivelum GitHub Explorer",
+  "category": "widgets",
+  "icon": "portfolio",
+  "description": "Embed the Ivelum GitHub Explorer application.",
+  "keywords": ["github", "explorer", "repository"],
+  "textdomain": "ivelum-github-explorer",
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "editorScript": "file:./index.js"
+}

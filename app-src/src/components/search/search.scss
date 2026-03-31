@@ -1,0 +1,107 @@
+@import "/src/styles/vars.scss";
+
+.search {
+    &__input {
+        background-color: $color-background;
+        color: $color-primary-text;
+        padding: 10px;
+        width: 500px;
+        position: absolute;
+        font-size: 23px;
+        top: -120px;
+        left: 240px;
+        border-radius: 4px;
+        border: 2px solid $color-secondary-text;
+        outline: none;
+        transition: border-color 0.3s;
+
+        :focus {
+            border-color: $color-highlight;
+        }
+
+        &::placeholder {
+            color: $color-secondary-text;
+        }
+    }
+
+    &__repo {
+        display: flex;
+        flex-flow: row wrap;
+        width: 150px;
+        text-decoration: none;
+        color: $color-primary-text;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        margin-inline-start: 20px;
+        margin-block-end: 50px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+        }
+
+        .svg-inline--fa {
+            width: 30px;
+            height: 30px;
+            margin-block-end: 10px;
+        }
+    }
+
+    &__repo-name {
+        font-size: 18px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__repos {
+        display: flex;
+        align-content: center;
+        align-items: flex-start;
+        flex-flow: row wrap;
+        background-color: rgba($color-secondary-text, .2);
+        animation: createBox .25s;
+        padding: 40px;
+    }
+
+    &__load-more {
+        background-color: $color-background;
+        color: $color-primary-text;
+        border: 2px solid $color-secondary-text;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: $color-primary-text;
+            color: $color-background;
+            border-color: $color-highlight;
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+
+    &__loading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-block-end: 40px;
+    }
+
+    &__load-more-wrapper {
+        background-color: rgba($color-secondary-text, .2);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-block-end: 40px;
+    }
+}

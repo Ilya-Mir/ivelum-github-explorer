@@ -1,0 +1,23 @@
+@import "/src/styles/vars.scss";
+
+.file__container {
+    text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-block-start: 20px;
+    width: 100%;
+
+    pre {
+        white-space: pre-wrap;
+        width: 100%;
+    }
+
+}
+
+.file {
+    &__title {
+        font-size: 25px;
+        margin-block-end: 50px;
+    }
+}

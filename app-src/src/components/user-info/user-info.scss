@@ -1,0 +1,39 @@
+@import "/src/styles/vars.scss";
+
+$ava-height: 50px;
+$ava-width: 50px;
+
+.user-info {
+    &__container {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    &__name {
+        color: $color-primary-text;
+        font-size: 20px;
+        margin-inline-end: 20px;
+    }
+
+    &__ava-wrapper {
+        &:after {
+            content: "";
+            background: rgba(0, 128, 0, 0.5);
+            position: absolute;
+            border-radius: $ava-width;
+            top: 0;
+            right: 0;
+            width: $ava-width;
+            height: $ava-height;
+            z-index: 1;
+        }
+    }
+
+    &__ava {
+        width: $ava-width;
+        height: $ava-height;
+        border-radius: $ava-width;
+        position: relative;
+    }
+}

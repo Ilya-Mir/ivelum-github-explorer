@@ -1,0 +1,32 @@
+@import "/src/styles/vars.scss";
+
+.folder {
+    &__container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    &__file {
+        color: $color-log-message;
+        width: 150px;
+        margin-block-end: 30px;
+        text-decoration: none;
+
+
+        &:hover {
+            color: rgba($color-log-message, .8)
+        }
+
+        .svg-inline--fa {
+            width: 30px;
+            height: 30px;
+            margin-block-end: 10px;
+        }
+    }
+
+    &__title {
+        font-size: 25px;
+        margin-block-end: 50px;
+    }
+}

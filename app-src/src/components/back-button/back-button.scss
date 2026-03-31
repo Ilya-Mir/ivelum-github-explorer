@@ -1,0 +1,24 @@
+@import "/src/styles/vars.scss";
+
+.back-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: $color-log-message;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+    .svg-inline--fa {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px
+    }
+
+    &:hover {
+        color: rgba($color-log-message, .8);
+    }
+}

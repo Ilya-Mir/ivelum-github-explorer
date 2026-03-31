@@ -1,0 +1,10 @@
+@import "/src/styles/vars.scss";
+
+.error {
+    &__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 20px;
+        color: $color-error;
+    }
+}
